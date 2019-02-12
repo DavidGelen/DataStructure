@@ -38,6 +38,7 @@ public class BaseTask implements ITask {
     public void enqueue() {
         TaskScheduler.getInstance().enqueue(this);
     }
+
     //执行任务方法，此时标记为设为true，并且将当前任务记录下来
     @Override
     public void doTask() {
