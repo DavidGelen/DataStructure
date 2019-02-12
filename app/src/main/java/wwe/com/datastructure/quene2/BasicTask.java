@@ -34,7 +34,6 @@ public abstract class BasicTask implements ITask {
         return sequence;
     }
 
-    // 做优先级比较。
     @Override
     public int compareTo(ITask another) {
         final Priority me = this.getPriority();
